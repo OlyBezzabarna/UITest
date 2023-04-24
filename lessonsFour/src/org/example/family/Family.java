@@ -10,7 +10,6 @@ public class Family {
     private Pet pet;
 
     public Family() {
-
     }
 
     public Pet getPet() {
@@ -46,50 +45,43 @@ public class Family {
         return Arrays.hashCode(children);
     }
 
-    public static void addChild() {
-        Family family1 = new Family();
-        Human[] children = new Human[4];
-        children[0] = new Human("Tom", "Karleone", 1999, family1);
-        children[1] = new Human("Anna", "Karleone", 2001, family1);
-        children[2] = new Human("Etan", "Karleone", 2003, family1);
-        children[3] = new Human("Jon", "Karleone", 2005, family1);
-        System.out.println("Original Array is: " + Arrays.toString(children));
-
-        Human[] children1 = new Human[5];
+    public void addChild(Human child) {
+        Human[] children1 = new Human[children.length + 1];
         for (int i = 0; i < children.length; i++) {
             children1[i] = children[i];
         }
-        children1[4] = new Human("Diana", "Karleone", 2007, family1);
-        System.out.println("A new array after adding an element" + Arrays.toString(children1));
+        children1[children.length] = child;
+        children = children1;
+        System.out.println("New Array after adding an element: " + Arrays.toString(children));
     }
 
-    public static void deleteChild() {
-        Family family1 = new Family();
-        Human[] children = new Human[4];
-        children[0] = new Human("Tom", "Karleone", 1999, family1);
-        children[1] = new Human("Anna", "Karleone", 2001, family1);
-        children[2] = new Human("Etan", "Karleone", 2003, family1);
-        children[3] = new Human("Jon", "Karleone", 2005, family1);
-
-        Human[] newChildren = new Human[children.length - 1];
-        Human deleteChild = children[3];
-
-        System.out.println("Original Array is: " + Arrays.toString(children));
+    public void deleteChild(Human child) {
+        Human[] children1 = new Human[children.length - 1];
         int index = 0;
         for (int i = 0; i < children.length; i++) {
-            if (children[i] != deleteChild) {
-                newChildren[index] = children[i];
+            if (!children[i].equals(child)) {
+                children1[index] = children[i];
                 index++;
             }
         }
-
-        children = newChildren;
-        System.out.println("New Array after deleting element = " + deleteChild + " and shifting: " + Arrays.toString(children));
+        children = children1;
+        System.out.println("New Array after deleting element " + child + " and shifting: " + Arrays.toString(children));
     }
 
     public int countFamily() {
         return children.length + 2;
     }
 
+    @Override
+    public String toString() {
+        return "Family{" +
+                "mother=" + mother.getName() + " " + mother.getSurname() + " " + mother.getYear() +
+                ", father=" + father.getName() + " " + father.getSurname() + " " + father.getYear() +
+                ", children=" + Arrays.deepToString(children) +
+                ", pet=" + pet +
+                '}';
+    }
+
 }
+
 

@@ -26,12 +26,13 @@ public class Main {
         children[1] = new Human("Anna", "Karleone", 2001, family1);
         children[2] = new Human("Etan", "Karleone", 2003, family1);
         children[3] = new Human("Jon", "Karleone", 2005, family1);
+        children[3].setFamily(family1);
 
         family1 = new Family(mother, father, children, pet);
 
         family1.greetPet();
         family1.describePet();
-        System.out.println(human.toStringWithoutName());
+        System.out.println(human);
 
         Pet dog = new Pet();
         dog.setNickName("Rock");
@@ -40,11 +41,12 @@ public class Main {
         dog.setHabits(new String[]{"eat", "drink", "sleep"});
         System.out.println(dog);
 
-        Family.addChild();
-        Family.deleteChild();
+        Human children1 = new Human("Elin", "Karleone", 2007,family1);
 
-        System.out.println(mother);
-        System.out.println(father);
+        family1.addChild(children1);
+        System.out.println(family1);
+        family1.deleteChild(children[0]);
+        family1.deleteChild(children[1]);
 
         System.out.println(family1.countFamily());
 
@@ -53,8 +55,3 @@ public class Main {
 
 
 }
-
-
-
-
-

@@ -5,7 +5,6 @@ import java.util.Objects;
 
 public class Human {
 
-
     private String name;
     private String surname;
     private int year;
@@ -28,23 +27,14 @@ public class Human {
         this.schedule = schedule;
     }
 
-    public String toStringWithoutName() {
+    @Override
+    public String toString() { //
         return "Human{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", year=" + year +
                 ", iq=" + iq +
                 ", schedule=" + Arrays.deepToString(schedule) +
-                '}';
-    }
-
-    @Override
-    public String toString() {
-        return "Family{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", year=" + year +
-                ", family=" + family.toString() +
                 '}';
     }
 
@@ -60,5 +50,20 @@ public class Human {
     public int hashCode() {
         return Objects.hash(name);
     }
-}
 
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setFamily(Family family) {
+        this.family = family;
+    }
+}
