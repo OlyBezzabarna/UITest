@@ -2,7 +2,7 @@ package org.example.family;
 
 import java.util.Arrays;
 
-public class Pet extends Family {
+public class Pet {
     private String species;
     private String nickname;
     private int age;
