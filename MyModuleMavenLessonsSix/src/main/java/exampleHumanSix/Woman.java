@@ -5,7 +5,7 @@ import exampleFamilySix.Family;
 import exampleFamilySix.Human;
 import examplePetSix.DomesticCat;
 
-public class Woman extends Human {
+public final class Woman extends Human {
 
     public Woman() {
 

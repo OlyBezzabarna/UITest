@@ -8,7 +8,7 @@ import examplePetSix.Dog;
 import examplePetSix.DomesticCat;
 import org.jetbrains.annotations.NotNull;
 
-public class Man extends Human {
+public final class Man extends Human {
 
     public Man() {
     }
