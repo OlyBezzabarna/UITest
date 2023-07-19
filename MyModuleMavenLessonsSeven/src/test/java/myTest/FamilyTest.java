@@ -2,10 +2,10 @@ package myTest;
 
 import java.util.*;
 
-import exampleFamilySix.Family;
-import exampleFamilySix.Human;
-import exampleFamilySix.Pet;
-import examplePetSix.DomesticCat;
+import exampleFamily.Family;
+import exampleFamily.Human;
+import exampleFamily.Pet;
+import examplePet.DomesticCat;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

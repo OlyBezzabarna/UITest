@@ -29,7 +29,7 @@ public class FamilyTest {
         Pet pet = new Pet(Species.CAT, "Боня", 4, 5,
                 new String[]{"любит спать целый день", "и гулять всю ночь"});
         family1 = new Family(mother, father, new Human[]{child1, child2}, pet);
-
+        
     }
 
     @Test

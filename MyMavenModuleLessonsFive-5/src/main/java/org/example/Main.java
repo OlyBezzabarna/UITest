@@ -1,5 +1,4 @@
 package org.example;
-
 import org.example.family.Family;
 import org.example.family.Human;
 import org.example.family.Pet;

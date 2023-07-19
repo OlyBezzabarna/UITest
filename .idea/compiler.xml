@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MavinModulLessonsEight" />
+        <module name="experimentalJunit" />
+        <module name="MavenModule (1)" />
+        <module name="MavenModule (2)" />
+        <module name="ApiTests" />
+        <module name="AllureJunit" />
+        <module name="MavenModule" />
+        <module name="experimentalTestNG" />
+        <module name="ThirdCourse" />
+        <module name="UITest" />
+        <module name="UITests" />
+        <module name="ApiTest" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AllureJunit" target="20" />
+      <module name="ApiTest" target="16" />
+      <module name="ApiTests" target="16" />
+      <module name="experimentalJunit" target="15" />
+      <module name="experimentalTestNG" target="15" />
+      <module name="MavenModule" target="17" />
+      <module name="MavenModule (1)" target="17" />
+      <module name="MavenModule (2)" target="17" />
+      <module name="MavinModulLessonsEight" target="17" />
+      <module name="myMavenModul" target="17" />
+      <module name="MyMavenModuleLessonsFive-5" target="17" />
+      <module name="MyMavenModuleLessonsSeven" target="17" />
+      <module name="MyModuleMavenLessonsSix" target="17" />
+      <module name="ThirdCourse" target="17" />
+      <module name="threeCourse" target="17" />
+      <module name="UITest" target="16" />
+      <module name="UITests" target="20" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
